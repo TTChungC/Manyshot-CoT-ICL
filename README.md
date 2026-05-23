@@ -1,9 +1,9 @@
-# Many-Shot CoT-ICL
+# Manyshot CoT-ICL
 
-[![arXiv](https://img.shields.io/badge/arXiv-2605.13511-b31b1b.svg?style=plastic)](https://arxiv.org/abs/2605.13511)
-[![ICML 2026](https://img.shields.io/badge/ICML-2026-blue.svg?style=plastic)](https://icml.cc/)
+[![arXiv](https://img.shields.io/badge/arXiv-2605.13511-b31b1b.svg?style=plastic)](https://arxiv.org/pdf/2605.13511)
+[![Web](https://img.shields.io/badge/Web-Page-blue.svg?style=plastic)](https://ttchungc.github.io/)
 
-This is the official release accompanying our **ICML 2026** paper:
+This is the official release accompanying our **Findings of ICML 2026** paper:
 
 > **Many-Shot CoT-ICL: Making In-Context Learning Truly Learn**  
 > [Tsz Ting Chung](https://ttchungc.github.io/), [Lemao Liu](https://lemaoliu.github.io/), [Mo Yu](https://sites.google.com/site/moyunlp/), [Dit-Yan Yeung](https://sites.google.com/view/dyyeung)
@@ -13,7 +13,6 @@ We reframe many-shot chain-of-thought ICL as *in-context test-time learning*, st
 ## Repository layout
 
 ```
-icml_code/
 ├── cot_icl/                 # Library: paths, models, grading, CDS, runners
 │   ├── cds/                 # CDS ordering (TSP heuristic)
 │   ├── detectiveqa/         # DetectiveQA data loading
@@ -31,7 +30,8 @@ icml_code/
 ## Installation
 
 ```bash
-cd icml_code
+git clone https://github.com/TTChungC/Manyshot-CoT-ICL.git
+cd Manyshot-CoT-ICL
 python -m venv .venv && source .venv/bin/activate
 pip install -e .
 # or: pip install -r requirements.txt

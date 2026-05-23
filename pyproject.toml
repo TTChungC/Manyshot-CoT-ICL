@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "cot-icl"
+name = "manyshot-cot-icl"
 version = "0.1.0"
 description = "Official code for Many-Shot CoT-ICL (ICML 2026)"
 readme = "README.md"
