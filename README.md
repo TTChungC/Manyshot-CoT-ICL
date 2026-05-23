@@ -49,7 +49,7 @@ pip install -e .
 | `COT_ICL_MODELS` | `../` (parent of repo root) | Directory containing LLM weights |
 | `COT_ICL_MODEL_<ALIAS>` | — | Override path for a model alias (e.g. `COT_ICL_MODEL_QWEN3`) |
 | `COT_ICL_EMBED_BGE_M3` | `BAAI/bge-m3` | Sentence-transformers path for CDS |
-| `COT_ICL_API_BASE` | `http://21.0.198.55/{user}/v1` | Remote OpenAI-compatible API for `math_infer.py -u` |
+| `COT_ICL_API_BASE` | `http://localhost:8000/{user}/v1` | OpenAI-compatible API when using `math_infer.py -u` (set your host; `{user}` is the `-u` value) |
 
 For Qwen long-context models you may need:
 

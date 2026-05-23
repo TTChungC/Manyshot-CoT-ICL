@@ -58,11 +58,17 @@ def write_json_record(path: Path, record: dict) -> None:
     print(f"Wrote {path}")
 
 
-def api_base_url(user: str | None) -> str | None:
-    if user is None:
-        return None
-    template = os.environ.get("COT_ICL_API_BASE", "http://21.0.198.55/{user}/v1")
-    return template.format(user=user)
+def api_base_url(user: str) -> str:
+    """
+    Resolve OpenAI-compatible API base URL for remote MATH inference (`-u`).
+
+    Set `COT_ICL_API_BASE` to your server. Use `{user}` in the template if the
+    path includes a per-user slot, e.g. `http://localhost:8000/{user}/v1`.
+    """
+    template = os.environ.get("COT_ICL_API_BASE", "http://localhost:8000/{user}/v1")
+    if "{user}" in template:
+        return template.format(user=user)
+    return template.rstrip("/")
 
 
 def drop_null_reinforce_entries(ridata: dict) -> dict:
