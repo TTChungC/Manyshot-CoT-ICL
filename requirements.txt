@@ -1,0 +1,17 @@
+# Core
+numpy>=1.24
+torch>=2.0
+datasets>=2.14
+tqdm>=4.65
+
+# Inference
+vllm>=0.4
+transformers>=4.40
+openai>=1.0
+
+# MATH grading
+sympy>=1.12
+
+# CDS
+scipy>=1.10
+sentence-transformers>=2.6

@@ -1,0 +1,25 @@
+# Data & outputs (download/prepare separately)
+data/*
+!data/README.md
+*.jsonl
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+
+# ML artifacts
+wandb/
+*.pt
+*.ckpt
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
