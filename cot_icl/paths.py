@@ -5,7 +5,7 @@ from __future__ import annotations
 import os
 from pathlib import Path
 
-# Repository root: icml_code/
+# Repository root (directory that contains cot_icl/, scripts/, data/, …)
 ROOT = Path(__file__).resolve().parents[1]
 DATA_ROOT = Path(os.environ.get("COT_ICL_DATA", ROOT / "data"))
 MODELS_ROOT = Path(os.environ.get("COT_ICL_MODELS", ROOT.parent))

@@ -12,6 +12,8 @@ We reframe many-shot chain-of-thought ICL as *in-context test-time learning*, st
 
 ## Repository layout
 
+Clone root (`Manyshot-CoT-ICL/`):
+
 ```
 ├── cot_icl/                 # Library: paths, models, grading, CDS, runners
 │   ├── cds/                 # CDS ordering (TSP heuristic)
@@ -32,7 +34,7 @@ We reframe many-shot chain-of-thought ICL as *in-context test-time learning*, st
 | Variable | Default | Purpose |
 |----------|---------|---------|
 | `COT_ICL_DATA` | `./data` | Root for datasets and `infer_res/` |
-| `COT_ICL_MODELS` | parent of `icml_code/` | Directory containing LLM weights |
+| `COT_ICL_MODELS` | `../` (parent of repo root) | Directory containing LLM weights |
 | `COT_ICL_MODEL_<ALIAS>` | — | Override path for a model alias (e.g. `COT_ICL_MODEL_QWEN3`) |
 | `COT_ICL_EMBED_BGE_M3` | `BAAI/bge-m3` | Sentence-transformers path for CDS |
 | `COT_ICL_API_BASE` | `http://21.0.198.55/{user}/v1` | Remote OpenAI-compatible API for `math_infer.py -u` |
