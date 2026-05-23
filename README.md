@@ -1,7 +1,7 @@
 # Manyshot CoT-ICL
 
 [![arXiv](https://img.shields.io/badge/arXiv-2605.13511-b31b1b.svg?style=plastic)](https://arxiv.org/pdf/2605.13511)
-[![Web](https://img.shields.io/badge/Web-Page-blue.svg?style=plastic)](https://ttchungc.github.io/)
+
 
 This is the official release accompanying our **Findings of ICML 2026** paper:
 
@@ -26,18 +26,6 @@ We reframe many-shot chain-of-thought ICL as *in-context test-time learning*, st
 ├── data/                    # Datasets & outputs (not shipped; see data/README.md)
 └── *_infer*.py              # Thin wrappers → cot_icl.runners (same CLI as before)
 ```
-
-## Installation
-
-```bash
-git clone https://github.com/TTChungC/Manyshot-CoT-ICL.git
-cd Manyshot-CoT-ICL
-python -m venv .venv && source .venv/bin/activate
-pip install -e .
-# or: pip install -r requirements.txt
-```
-
-**Hardware:** experiments use [vLLM](https://github.com/vllm-project/vllm) on NVIDIA GPUs. CDS ordering runs on CPU in under a minute for \(n \le 128\) demonstrations.
 
 ### Environment variables
 
