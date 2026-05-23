@@ -29,6 +29,18 @@ Clone root (`Manyshot-CoT-ICL/`):
 └── *_infer*.py              # Thin wrappers → cot_icl.runners (same CLI as before)
 ```
 
+## Installation
+
+```bash
+git clone https://github.com/TTChungC/Manyshot-CoT-ICL.git
+cd Manyshot-CoT-ICL
+python -m venv .venv && source .venv/bin/activate
+pip install -e .
+# or: pip install -r requirements.txt
+```
+
+**Hardware:** experiments use [vLLM](https://github.com/vllm-project/vllm) on NVIDIA GPUs. CDS ordering runs on CPU in under a minute for \(n \le 128\) demonstrations.
+
 ### Environment variables
 
 | Variable | Default | Purpose |
